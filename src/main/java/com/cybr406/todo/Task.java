@@ -55,6 +55,8 @@ public class Task {
         this.details = details;
     }
 
+    public void  testAddTask(){}
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

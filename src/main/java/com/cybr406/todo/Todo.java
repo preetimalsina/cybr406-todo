@@ -1,5 +1,6 @@
 package com.cybr406.todo;
 
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -22,7 +23,8 @@ public class Todo {
         this.id = id;
     }
 
-    public String getAuthor() {
+   @NotBlank
+   public String getAuthor() {
         return author;
     }
 
@@ -30,6 +32,7 @@ public class Todo {
         this.author = author;
     }
 
+    @NotBlank
     public String getDetails() {
         return details;
     }

@@ -351,6 +351,7 @@ class TodoApplicationTests {
 	 *     Code: 204 No Content on success, 404 Not Found if the task does not exist.
 	 *     Response Body: Nothing...an empty response.
 	 */
+
 	@Test
 	public void deleteTask() throws Exception {
 		testAddTask();
@@ -391,5 +392,6 @@ class TodoApplicationTests {
 				.andDo(print())
 				.andExpect(status().isNotFound());
 	}
+
 
 }

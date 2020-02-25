@@ -18,7 +18,6 @@ import static java.lang.Integer.min;
  */
 @Component
 public class InMemoryTodoRepository implements TodoRepository {
-
     private long nextTodoId = 0;
 
     private long nextTaskId = 0;
@@ -92,4 +91,7 @@ public class InMemoryTodoRepository implements TodoRepository {
         todos = new ArrayList<>();
     }
 
+
+        public void delete( Task id ) {
+    }
 }
